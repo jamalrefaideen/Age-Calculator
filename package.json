@@ -1,0 +1,32 @@
+{
+  "name": "agecalc",
+  "version": "1.0.0",
+  "description": "JqueryAgeCalc",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAMAL62/Age-Calculator.git"
+  },
+  "keywords": [
+    "npm",
+    "agecalc",
+    "jqueryagecalc",
+    "floatingagecalc",
+    "agelabel",
+    "age",
+    "agecalculation",
+    "npm",
+    "html-css-jqueryageclaculator",
+    "agecalculation",
+    "agefinder",
+    "findagecalculator",
+    "jqueryagefinder",
+    "floatingage"
+  ],
+  "author": "Jamal Refaideen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JAMAL62/Age-Calculator/issues"
+  },
+  "homepage": "https://github.com/JAMAL62/Age-Calculator#readme"
+}
