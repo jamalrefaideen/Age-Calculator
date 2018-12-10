@@ -93,7 +93,7 @@ $(document).ready(function () {
                     label.css({
                         'position': 'absolute',
                         'color': 'inherit',
-                        'font-size': '14px'
+                        'font-size': '18px'
                     });
                   input.attr('placeholder', "")
                   input.css({
