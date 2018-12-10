@@ -5,6 +5,7 @@ $(document).ready(function () {
             var label = $(this).find('label');
             var span=$(this).find('span');
             var div = $(this);
+            var age=""
             initStyle(input)
 
             function initStyle(input) {
@@ -75,7 +76,7 @@ $(document).ready(function () {
                 var dateOfbirth = new Date(allowYear)
                 var userYear = dateOfbirth.getFullYear();
                 if (todayYear > userYear && typeof userYear == 'number' && allowYear == userYear) {
-                    var age = todayYear - userYear;
+                     age = todayYear - userYear;
                     input.val(age);
         
                     input.css({
@@ -107,7 +108,7 @@ $(document).ready(function () {
                     }, 250, 'linear');
                 }
             
-                else{
+                else if(!age &&allowYear==null){
                     span.html("Invalid Dob!");
                  
                 } 
