@@ -2,16 +2,16 @@ $(document).ready(function () {
     $.fn.ageCalc = function () {
         this.each(function () {
             var input = $(this).find('input');
-            var label = $(this).find('label')
-            var div = $(this)
+            var label = $(this).find('label');
+            var span=$(this).find('span');
+            var div = $(this);
             initStyle(input)
 
             function initStyle(input) {
                 input.css({
                     'border': 'none',
                     'outline': 'none',
-                    'border-bottom': '2px solid teal',
-                    'padding-left': '35px'
+                    'border-bottom': '2px solid teal'
 
                 });
                 div.css({
@@ -24,9 +24,13 @@ $(document).ready(function () {
                     'left': '0px',
                     'position': 'absolute',
                     'bottom': '4px',
-                    'font-family': 'Tahoma'
+                    'font-family': 'Tahoma',
+                    'font-size':'18px'
                 });
-                
+                span.css({
+                    'position': 'absolute',
+
+                })
     
             }
             input.focus(function () {
@@ -37,7 +41,7 @@ $(document).ready(function () {
                 label.css({
                     'position': 'absolute',
                     'color': 'blueviolet',
-                    'font-size': '12px',
+                    'font-size': '14px',
                     'padding-top': '7px',
                     'padding-left': '0px'
                 });
@@ -48,7 +52,11 @@ $(document).ready(function () {
 
                     'border-bottom': '1px solid blueviolet',
 
-                })
+                });
+                input.attr('placeholder', "YYYY-MM-DD")
+                span.html("")
+            
+               
             }
 
             input.blur(function () {
@@ -72,33 +80,38 @@ $(document).ready(function () {
         
                     input.css({
 
-                        'border-bottom': '1px solid teal',
+                        'border-bottom': '2px solid teal',
 
                     })
                     label.css({
                         'position': 'absolute',
-                        'font-size': 'inherit',
-                        'color':'black'
+                        'font-size': '14px',
+                        'color':'inherit'
                     });
+                  
+                } else if (!input.val()) {
+                    label.css({
+                        'position': 'absolute',
+                        'color': 'inherit',
+                        'font-size': '14px'
+                    });
+                  input.attr('placeholder', "")
+                  input.css({
+
+                    'border-bottom': '2px solid teal',
+
+                });
+                    span.html("Please Enter Your Dob!");
                     label.animate({
                         'bottom': '4px'
                     }, 250, 'linear');
-                } else if (!input.val()) {
-                    input.attr('placeholder', "Please Enter your Dob!")
-                    label.css({
-                        'position': 'absolute',
-                        'color': 'blueviolet',
-                        'font-size': '12px'
-                    });
-                } else {
-                    input.attr('placeholder', "Invalid Dob!");
-                    label.css({
-                        'position': 'absolute',
-                        'color': 'blueviolet',
-                        'font-size': '12px'
-                    });
-                    input.val("")
                 }
+            
+                else{
+                    span.html("Invalid Dob!");
+                 
+                } 
+                
             }
 
         });
