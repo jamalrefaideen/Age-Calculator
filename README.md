@@ -1,11 +1,11 @@
 # Age-Calculator
-执行命令：`Age Calculator Using Javascript`
+`Age Calculator Using Javascript`
 
 ## New Features
-1.support Floating label;
-2.simple user Validation;
-3.custom ErrorMessage;
-4.easily Find your Age;
+-support Floating label;
+-simple user Validation;
+-custom ErrorMessage;
+-easily Find your Age;
 
 ## Example
 
