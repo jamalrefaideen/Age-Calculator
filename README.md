@@ -2,10 +2,10 @@
 `Age Calculator Using Javascript`
 
 ## New Features
--support Floating label;
--simple user Validation;
--custom ErrorMessage;
--easily Find your Age;
+- support Floating label;
+- simple user Validation;
+- custom ErrorMessage;
+- easily Find your Age;
 
 ## Example
 
