@@ -1,6 +1,8 @@
 # Age-Calculator
 `Age Calculator Using Javascript`
 
+## Demo
+Please [click](https://agecalc.now.sh/) here to see the Demo
 ## New Features
 - support Floating label;
 - simple user Validation;
